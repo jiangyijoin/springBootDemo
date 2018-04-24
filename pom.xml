@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.eastcom_sw.frm</groupId>
+		<artifactId>FRM</artifactId>
+		<version>1.0.5-SNAPSHOT</version>
+	</parent>
+	<groupId>com.eastcom_sw.etai</groupId>
+	<artifactId>etai-service</artifactId>
+	<packaging>jar</packaging>
+	<description>电信云平台</description>
+	<dependencies>
+		<!-- swagger2 -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>18.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.7.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.eastcom_sw.frm</groupId>
+			<artifactId>frm-common</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.eastcom_sw.frm</groupId>
+			<artifactId>frm-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.eastcom_sw.frm</groupId>
+			<artifactId>frm-db</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.8</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.9</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javacsv</groupId>
+			<artifactId>javacsv</artifactId>
+			<version>2.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>4.1</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<finalName>edos-service</finalName>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+
+</project>
